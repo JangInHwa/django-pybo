@@ -152,11 +152,11 @@ LOGGING = {
 		'console': {
 			'level' : 'INFO',
 			'filters' : ['require_debug_true'],
-			'class' : 'loggin.StreamHandler',
+			'class' : 'logging.StreamHandler',
 		},
 		'django.server': {
 			'level': 'INFO',
-			'class': 'loggin.StreamHandler',
+			'class': 'logging.StreamHandler',
 			'formatter': 'django.server'
 		},
 		'mail_admins': {
