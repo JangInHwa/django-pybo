@@ -131,7 +131,7 @@ LOGGING = {
 	'version' : 1,
 	'disable_existing_loggers': False,
 	'filters': {
-		'require_debus_false' : {
+		'require_debug_false' : {
 			'()' : 'django.utils.log.RequireDebugFalse',
 		},
 		'require_debug_true' : {
@@ -166,7 +166,7 @@ LOGGING = {
 		},
 		'file': {
 			'level': 'INFO',
-			'filters': ['require_debugs_false'],
+			'filters': ['require_debug_false'],
 			'class': 'logging.handlers.RotatingFileHandler',
 			'filename': BASE_DIR / 'logs/mysite.log',
 			'maxBytes': 1024*1024*5,

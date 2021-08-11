@@ -6,3 +6,5 @@ env/
 config.sh
 
 *.pem
+static-ip.txt
+logs
