@@ -4,6 +4,7 @@ from django.http import HttpRequest
 from pybo.models import Question
 
 def index(request:HttpRequest):
+	3/0
 	page = request.GET.get('page', '1')
 	question_list = Question.objects.order_by('-create_date')
 
