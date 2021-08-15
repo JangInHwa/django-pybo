@@ -1,6 +1,6 @@
 from .base import *
 
-ALLOWED_HOSTS = ['13.209.210.184']
+ALLOWED_HOSTS = ['uglyonlytoday.com']
 
 STATIC_ROOT = BASE_DIR / 'static'
 
