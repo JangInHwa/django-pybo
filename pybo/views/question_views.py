@@ -17,7 +17,7 @@ def question_create(request: HttpRequest):
 			question.create_date = timezone.now()
 			question.author = request.user
 			question.save()
-			return redirect('pybo:index')
+			return redirect('index')
 	else:
 		form = QuestionForm()
 	context = {'form': form}
@@ -49,4 +49,4 @@ def question_delete(request:HttpRequest, question_id:int):
 		messages.error(request, '삭제 권한이 없습니다')
 	else:
 		question.delete()
-	return redirect('pybo:index')
+	return redirect('index')

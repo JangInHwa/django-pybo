@@ -4,7 +4,6 @@ from .views import base_views, question_views, answer_views, comment_views, vote
 app_name = 'pybo'
 
 urlpatterns = [
-	path('', base_views.index, name='index'),
 	path('<int:question_id>/', base_views.detail, name='detail'),
 	path('question/create/', question_views.question_create, name='question_create'),
 	path('question/modify/<int:question_id>/', question_views.question_modify, name='question_modify'),
